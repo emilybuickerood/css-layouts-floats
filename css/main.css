@@ -2,5 +2,41 @@
 body {
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
-  margin: 10px;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px dotted red;
+  margin-bottom: 20px;
+  overflow: auto; /*allows floated children to hold out its height*/
+}
+
+.bear {
+  border: 5px solid black;
+  float: right;
+  padding: 20px;
+  margin: 0px 10px 10px 0;
+}
+
+/*floated adjacent siblings will sit next to each other, if they can fit*/
+
+section,
+aside {
+  border: 1px dotted green;
+  float: left;
+}
+
+aside {
+  float: right;
+}
+
+footer {
+  clear: both;
+}
+/*clear can be used after floated elements to put item on next level*/
+
+.column {
+  float: left;
 }
