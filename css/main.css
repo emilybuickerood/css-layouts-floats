@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif;
@@ -37,6 +39,9 @@ footer {
 }
 /*clear can be used after floated elements to put item on next level*/
 
+/*Custom column set up. aka "grid"*/
 .column {
+  border: 1px dotted black;
+  width: 50%;
   float: left;
 }
